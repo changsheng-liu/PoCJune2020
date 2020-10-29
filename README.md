@@ -60,32 +60,32 @@ In the proposed system, user can pay his/her bill from website or App on the pho
 
 1. RDBMS Module
 
-2. - The database is established by Oracle-11g
+   - The database is established by Oracle-11g
 
-3. - Service use JPA to build the connection to database
+   - Service use JPA to build the connection to database
 
-4. Service Module
+2. Service Module
 
-5. - Service provide HTTP endpoint by SpringMVC
+   - Service provide HTTP endpoint by SpringMVC
 
-6. - Service provide transaction function to provide bill payment
+   - Service provide transaction function to provide bill payment
 
-7. - Service is based on architecture of microservice.
+   - Service is based on architecture of microservice.
 
-8. - Service provide multithreading capability as well as consistency of data.
+   - Service provide multithreading capability as well as consistency of data.
 
-9. Message Module 
+3. Message Module 
 
-10. - Based on RabbitMQ, each microservice could talk with each other by sending and receiving messages in the system
+   - Based on RabbitMQ, each microservice could talk with each other by sending and receiving messages in the system
 
-11. Frontend Module 
+   - Frontend Module 
 
-12. - Use Angular 8 to provide user friendly webpage for patients to pay the bills by either browsers or pages in Apps.
+   - Use Angular 8 to provide user friendly webpage for patients to pay the bills by either browsers or pages in Apps.
 
-13. Host Service Module
+4. Host Service Module
 
-14. - Host all components including DB and each service in Docker as single process.
+   - Host all components including DB and each service in Docker as single process.
 
-15. - Manage the whole bunch of processes by Kubernetes. 
+   - Manage the whole bunch of processes by Kubernetes. 
 
-16. - Deliver part of the services to AWS
+   - Deliver part of the services to AWS
